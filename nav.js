@@ -9,7 +9,6 @@ export function selectNav (btn, bar, title) {
         btn.addEventListener("click", e => {
             $title.textContent = btn.textContent
             $navBtns.forEach(el => el.classList.remove("green"));
-            console.log(btn.classList);
             btn.classList.add("green")
             switch (index) {
                 case 0:

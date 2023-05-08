@@ -177,15 +177,70 @@ footer a:hover{
     color: black;
 }
 
-/*IMC*/
+/*Tools*/
 
-.calculator{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.toolSec{
     height: 80vh;
 }
 
-.calculator p{
-    font-size: 3rem;
+/*Encuesta*/
+
+.encuesta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.encuesta form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.encuesta p{
+    font-size: 2rem;
+}
+
+.multiple-choice label, .range-input label{
+    font-size: 1.5rem;
+    margin-right: 4rem;
+}
+
+.multiple-choice select{
+    padding: .5rem 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    background-color: var(--green);
+    color: var(--beige);
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.inputs input{
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 3rem;
+    outline: none;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.encuesta button{
+    padding: .5rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    border: none;
+    background-color: var(--green);
+    color: var(--beige);
 }

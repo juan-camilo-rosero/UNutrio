@@ -26,9 +26,9 @@
         </div>
         <div class="options">
             <a class="green" href="#tool">Calculadora IMC</a>
-            <a href="#tool">Tu peso ideal</a>
-            <a href="#tool">Tu seguimiento</a>
             <a href="#tool">Opciones en la U</a>
+            <a href="#tool">Tu seguimiento</a>
+            <a href="#tool">Encuesta</a>
         </div>
     </nav>
     <section id="tool">
@@ -36,8 +36,40 @@
             <h2>Calculadora de IMC</h2>
             <div class="line"></div>
         </div>
-        <div class="calculator">
-            <p>Aquí irá la herramienta :3</p>
+        <div class="encuesta toolSec">
+            <p class="encuesta-titulo">Hola, te agradeceríamos que pudieses ayudarnos a completar esta encuesta para mejorar el servicio :3</p>
+            <form target="_blank" action="https://formsubmit.co/suortizb@unal.edu.co" method="POST">
+                <div class="multiple-choice">
+                    <label for="pregrado-o-posgrado">¿Estás realizando un pregrado, posgrado o no eres estudiante activo?</label>
+                    <select name="pregrado-o-posgrado" required>
+                        <option value="pregrado">Pregrado</option>
+                        <option value="posgrado">Posgrado</option>
+                        <option value="ninguno">No soy estudiante</option>
+                    </select>
+                </div>
+
+                <div class="multiple-choice">
+                    <label for="vive-solo">¿Vives con más personas o vives sólo?</label>
+                    <select name="vive-solo" required class="stu">
+                        <option value="Si">Vivo solo</option>
+                        <option value="No">Vivo con otras personas</option>
+                    </select>
+                </div>
+
+                <div class="inputs">
+                    <input type="number" name="edad" placeholder="Edad">
+                    <input type="number" name="altura" placeholder="Altura (en metros)" step="0.01">
+                    <input type="number" name="peso" placeholder="Peso">
+                    <input type="number" name="estrato" placeholder="Estrato">
+                </div>
+
+
+                <div class="range-input">
+                    <label for="rango-habitos">En una escala del 1 al 10, qué tan buenos consideras que son tus hábitos alimenticios?</label>
+                    <input name="rango-habitos" type="range" min="0" max="10">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
 

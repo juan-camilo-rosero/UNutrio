@@ -1,9 +1,17 @@
 const d = document
 
-export function selectNav (btn, bar, title) {
+export function selectNav (btn, bar, title, navElements) {
     const $navBtns = d.querySelectorAll(btn),
     $bar = d.querySelector(bar),
-    $title = d.querySelector(title)
+    $title = d.querySelector(title),
+    navElementsArr = []
+
+    navElements.forEach(element => {
+        let $element = d.querySelector("."+element)
+        navElementsArr.push($element)
+    });
+
+    console.log(navElementsArr);
 
     $navBtns.forEach((btn, index) => {
         btn.addEventListener("click", e => {
@@ -24,6 +32,10 @@ export function selectNav (btn, bar, title) {
                     $bar.style.marginTop = "37.5vh"
                     break;
             }
+
+            navElementsArr.forEach(el =>  el.classList.add("none"));
+
+            navElementsArr[index].classList.remove("none")
         })
     });
 }

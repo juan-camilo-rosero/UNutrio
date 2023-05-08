@@ -29,6 +29,13 @@ html{
     color: var(--green) !important;
 }
 
+.none{
+    display: none;
+    visibility: hidden;
+    height: 0 !important;
+}
+
+
 /*Main*/
 
 main{
@@ -127,10 +134,6 @@ b{
     height: 20vh;
 }
 
-#tool{
-    width: 100vw;
-}
-
 #tool h2{
     text-align: center;
     color: var(--green);
@@ -179,8 +182,19 @@ footer a:hover{
 
 /*Tools*/
 
-.toolSec{
-    height: 80vh;
+/*Calcuadora*/
+
+.calculadora{
+    height: 80vh;   
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculadora p, .imc-result{
+    font-size: 2rem;
 }
 
 /*Encuesta*/
@@ -190,27 +204,29 @@ footer a:hover{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 .encuesta form{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
 }
 
 .encuesta p{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
 }
 
 .multiple-choice label, .range-input label{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 4rem;
 }
 
 .multiple-choice select{
-    padding: .5rem 2rem;
+    padding: .3rem 1rem;
     text-align: center;
     border: none;
     border-radius: 2rem;
@@ -228,19 +244,27 @@ footer a:hover{
 }
 
 .inputs input{
-    padding: .5rem 2rem;
+    padding: .3rem 1rem;
     border: none;
     border-radius: 3rem;
     outline: none;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
-.encuesta button{
+.encuesta button, .calculadora button{
     padding: .5rem 2rem;
     border-radius: 3rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border: none;
     background-color: var(--green);
     color: var(--beige);
+    cursor: pointer;
+    transition: .5s;
 }
+
+.encuesta button:hover, .calculadora button:hover{
+    background-color: black;
+}
+

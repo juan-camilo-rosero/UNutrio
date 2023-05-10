@@ -11,8 +11,6 @@ export function selectNav (btn, bar, title, navElements) {
         navElementsArr.push($element)
     });
 
-    console.log(navElementsArr);
-
     $navBtns.forEach((btn, index) => {
         btn.addEventListener("click", e => {
             $title.textContent = btn.textContent

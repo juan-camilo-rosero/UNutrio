@@ -212,6 +212,48 @@ footer a:hover{
     font-size: 2rem;
 }
 
+/*Opciones en la U*/
+
+.opciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.optionDiv{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    border: solid var(--green) .2rem;
+    margin-bottom: 5rem;
+    padding: 0 0 0 5vw;
+    border-radius: 50rem;
+}
+
+.optionImg{
+    background-color: var(--green);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    border-radius: 0 10rem 10rem 0;
+    background-size: contain;
+}
+
+.img1{
+    background-image: url("https://rizomaproyectos.com/images/proyectos-imagenes/cafeteria-un/Cafeteria-Medicina-800.jpg");
+}
+.img2{
+    background-image: url("https://bogota.unal.edu.co/fileadmin/_processed_/csm_comcent_45027a6968.jpg");
+}
+.img3{
+    background-image: url("https://www.las2orillas.co/wp-content/uploads/2015/06/FullSizeRender.jpg");
+}
+
 /*Encuesta*/
 
 .encuesta{
